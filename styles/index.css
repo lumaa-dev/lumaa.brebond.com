@@ -1,0 +1,64 @@
+.pfp {
+    color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    cursor: default;
+}
+
+.pfp img.o {
+    width: 35vh;
+    height: 35vh;
+    position: static;
+}
+
+.pfp > .sky {
+    height: 100vh;
+    display: flex;
+    border-radius: 10em;
+}
+
+.pfp > div.sky {
+    height: 100vh;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s-cat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s-cat .share {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.s-cat > button.share {
+    display: none;
+}
+
+.s-cat:hover > button.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    h1, h2, h3 {
+        font-size: 15vw;
+    }
+
+    .slog {
+        font-size: 5vw;
+    }
+
+    .pfp > .sky {
+        margin: 0;
+    }
+}

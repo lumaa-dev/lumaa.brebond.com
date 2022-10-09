@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    overflow: hidden auto;
+}
+
+body.dark {
+    color: #fff;
+    background: #353535;
+}
+
+a:-webkit-any-link {
+    color: initial;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-size: 5vw;
+    padding: 25px;
+}
+
+ul.big {
+    margin-left: 5vw;
+    list-style-type: none;
+}
+
+ul.big > li {
+    font-size: 2vw;
+}
+
+.bubble {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2vw;
+    border-radius: 5vh;
+    margin: 1rem 0 1rem 0; 
+}
+
+.slog {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.d-pad {
+    padding: 5vw;
+}
+
+a {
+    padding: .25rem 1rem;
+    margin: .25rem;
+    border-radius: 2rem;
+}
+
+.branded {
+    background: #f8bd4a;
+    color: #000;
+    border: 3px solid #000;
+}
+
+.branded:hover {
+    background: #bf9239;
+    color: #000;
+}
+
+.modrinth {
+    box-shadow: inset 0 -1px 1px rgb(0 0 0 / 25%);
+    background: #1bd96a;
+    color: #000 !important;
+}
+
+.modrinth:hover {
+    background: #2de391;
+}
+
+.github {
+    background: rgba(64,158,255,0.15);
+    border: 1px solid #71b7ff ;
+    color: #71b7ff !important;
+    padding: .25rem 1rem;
+    margin: .25rem;
+    border-radius: 2rem;
+}
+
+.github:hover {
+    background: #71b7ff;
+    border: 1px solid #71b7ff ;
+    color: #0a0c10 !important;
+}

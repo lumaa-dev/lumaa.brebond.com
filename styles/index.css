@@ -61,4 +61,10 @@
     .pfp > .sky {
         margin: 0;
     }
+
+    .s-cat > button.share {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

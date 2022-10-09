@@ -102,3 +102,13 @@ a {
     border: 1px solid #71b7ff ;
     color: #0a0c10 !important;
 }
+
+@media (max-width: 500px) {
+    ul.big > li {
+        font-size: 5vw;
+    }
+
+    .bubble {
+        padding: 5vw;
+    }
+}

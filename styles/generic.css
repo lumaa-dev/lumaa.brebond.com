@@ -6,8 +6,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #353535;
+    --txt-color: #fff;
+    --font: 'Nunito', sans-serif;
+
+    /* particular */
+    --async-bg: #2736f2;
+}
+
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font);
     font-size: 14px;
     color: #000;
     background: #fff;
@@ -15,8 +24,8 @@ body {
 }
 
 body.dark {
-    color: #fff;
-    background: #353535;
+    color: var(--txt-color);
+    background: var(--bg-color);
 }
 
 a:-webkit-any-link {
@@ -61,6 +70,28 @@ ul.big > li {
     padding: 5vw;
 }
 
+.s-cat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s-cat .share {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.s-cat > button.share {
+    display: none;
+}
+
+.s-cat:hover > button.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 a {
     padding: .25rem 1rem;
     margin: .25rem;
@@ -103,6 +134,49 @@ a {
     color: #0a0c10 !important;
 }
 
+.youtube {
+    background: #c00;
+    color: #fff !important;
+    font-weight: bold !important;
+    border-radius: 6px;
+}
+
+.tiktok {
+    background: #000;
+    color: #fff !important;
+    border-radius: 6px;
+}
+
+.unknownify {
+    background: var(--async-bg);
+    border-radius: 2rem;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+/* back button */
+.back {
+    position: fixed;
+    cursor: pointer;
+}
+
+.back > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.back p {
+    font-family: var(--font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.back img {
+    width: 3em;
+    height: 3em;
+}
+
 @media (max-width: 500px) {
     ul.big > li {
         font-size: 5vw;
@@ -110,5 +184,11 @@ a {
 
     .bubble {
         padding: 5vw;
+    }
+
+    .s-cat > button.share {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

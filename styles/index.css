@@ -27,28 +27,6 @@
     flex-direction: column;
 }
 
-.s-cat {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.s-cat .share {
-    width: 35px;
-    height: 35px;
-    padding: 5px;
-}
-
-.s-cat > button.share {
-    display: none;
-}
-
-.s-cat:hover > button.share {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media (max-width: 500px) {
     h1, h2, h3 {
         font-size: 15vw;
@@ -64,11 +42,5 @@
 
     .pfp > img.sky {
         padding: 0 5vw 5vw 5vw
-    }
-
-    .s-cat > button.share {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }

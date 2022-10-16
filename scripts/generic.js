@@ -43,7 +43,29 @@ window.onload = () => {
             }
         }
     }
+
+    setupBack();
 }
+
+// back button
+function setupBack() {
+    const dbacks = document.querySelectorAll("div.back");
+    dbacks.forEach((b) => {
+        const belement = document.createElement("button")
+        const img = document.createElement("img")
+        const text = document.createElement("p")
+        
+        belement.onclick = () => { history.back() }
+        img.src = "assets/left_arrow.svg";
+        text.innerText = "Retour arrière"
+
+        belement.append(img)
+        belement.append(text)
+        b.append(belement);
+    })
+}
+
+// share links / go to tag
 
 function linkHasId() {
     return location.href.match(/\#[a-z]+$/g)?.length > 0 ?? false;

@@ -1,5 +1,5 @@
-const username = "Lumaa"
-const slog = "Développeur avec la tête vide."
+const username = "Lumaa";
+const slog = "Développeur avec la tête vide.";
 
 window.mobileAndTabletCheck = function() {
     let check = false;
@@ -7,7 +7,7 @@ window.mobileAndTabletCheck = function() {
     return check;
   };
 
-window.onload = () => {
+window.onload = () => {    
     // slog
     const slogs = document.querySelectorAll(".slog")
 
@@ -44,25 +44,29 @@ window.onload = () => {
         }
     }
 
-    setupBack();
+    if (history.length) {
+        setupBack();
+    }   
 }
 
 // back button
 function setupBack() {
     const dbacks = document.querySelectorAll("div.back");
-    dbacks.forEach((b) => {
-        const belement = document.createElement("button")
-        const img = document.createElement("img")
-        const text = document.createElement("p")
-        
-        belement.onclick = () => { history.back() }
-        img.src = "assets/left_arrow.svg";
-        text.innerText = "Retour arrière"
-
-        belement.append(img)
-        belement.append(text)
-        b.append(belement);
-    })
+    if (dbacks.length > 0) {
+        dbacks.forEach((b) => {
+            const belement = document.createElement("button")
+            const img = document.createElement("img")
+            const text = document.createElement("p")
+            
+            belement.onclick = () => { history.back() }
+            img.src = "assets/left_arrow.svg";
+            text.innerText = "Retour arrière"
+    
+            belement.append(img)
+            belement.append(text)
+            b.append(belement);
+        })
+    }
 }
 
 // share links / go to tag
@@ -77,4 +81,12 @@ function setLinkId(id) {
     } else {
         return `${location.href}#${id}`;
     }
+}
+
+// make enumerators (in case)
+function Enum(){
+    for( var i = 0; i < arguments.length; ++i ){
+        this[arguments[i]] = i;
+    }
+    return this;
 }

@@ -33,4 +33,8 @@
     .pres {
         flex-direction: column;
     }
+
+    .pres .motto > p {
+        margin: 0.75rem;
+    }
 }

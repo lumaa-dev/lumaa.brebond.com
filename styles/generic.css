@@ -191,4 +191,10 @@ a {
         align-items: center;
         justify-content: center;
     }
+
+    .bubble.m-op {
+        display: flex;
+        flex-direction: row;
+        overflow: auto auto;
+    }
 }

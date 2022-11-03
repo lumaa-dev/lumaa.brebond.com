@@ -72,12 +72,12 @@ function setupBack() {
 // share links / go to tag
 
 function linkHasId() {
-    return location.href.match(/\#[a-z]+$/g)?.length > 0 ?? false;
+    return location.href.match(/\#[a-z]*$/g)?.length > 0 ?? false;
 }
 
 function setLinkId(id) {
     if (linkHasId()) {
-        return `${location.href.replace(/\#[a-z]+$/g, "")}#${id}`
+        return `${location.href.replace(/\#[a-z]*$/g, "")}#${id}`
     } else {
         return `${location.href}#${id}`;
     }

@@ -1,0 +1,56 @@
+h2 {
+    font-size: 3vw;
+}
+
+.bubble > .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15%;
+}
+
+ul.select {
+    list-style-type: none !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.select > li {
+    padding: 0 1vw 0 1vw;
+    margin: 0 3vw 0 3vw;
+    cursor: pointer;
+}
+
+ul.select > li.visible {
+    border-radius: 3px;
+    border-bottom: 0.35vh solid var(--backrooms);
+}
+
+ul.select > li button {
+    font-size: 20px;
+    color: white;
+}
+
+ul.select > li.visible button {
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 5.5vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    ul.select > li button {
+        font-size: 12px;
+        color: white;
+    }
+}

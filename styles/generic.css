@@ -12,7 +12,9 @@
     --font: 'Nunito', sans-serif;
 
     /* particular */
+    --modrinth-green: #1bd96a;
     --async-bg: #2736f2;
+    --backrooms: #b6b461;
 }
 
 body {
@@ -61,6 +63,14 @@ ul.big > li {
     margin: 1rem 0 1rem 0; 
 }
 
+.bubble img.showcase {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2vw;
+    border-radius: 5vh;
+    margin: 1rem 0 1rem 0;
+    width: 88vw;
+}
+
 .slog {
     font-size: 1.5vw;
     font-weight: 700;
@@ -98,6 +108,13 @@ a {
     border-radius: 2rem;
 }
 
+a.styleless {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    color: var(--async-bg);
+}
+
 .branded {
     background: #f8bd4a;
     color: #000;
@@ -111,7 +128,7 @@ a {
 
 .modrinth {
     box-shadow: inset 0 -1px 1px rgb(0 0 0 / 25%);
-    background: #1bd96a;
+    background: var(--modrinth-green);
     color: #000 !important;
 }
 

@@ -9,24 +9,23 @@ function updateSelect() {
         location.href = location.href + "#description";
     }
     buttons();
-    const d = selected();
-    d.classList.add("visible");
+    const s = selected();
+    s.tab.classList.add("visible");
+    s.bubble.classList.add("readable");
 
     // wtf u doin' here?
     function selected() {
         if (location.href.endsWith("description")) {
-            return document.getElementById("description");
+            return { tab: document.getElementById("description"), bubble: document.getElementsByClassName("description")[0] };
         } else if (location.href.endsWith("images")) {
-            return document.getElementById("images");
+            return { tab: document.getElementById("images"), bubble: document.getElementsByClassName("images")[0] };
         } else if (location.href.endsWith("versions")) {
-            return document.getElementById("versions");
+            return { tab: document.getElementById("versions"), bubble: document.getElementsByClassName("versions")[0] };
         } else if (location.href.endsWith("links")) {
-            return document.getElementById("links");
-        } else if (location.href.endsWith("up")) {
-            return;
+            return { tab: document.getElementById("links"), bubble: document.getElementsByClassName("links")[0] };
         } else {
             location.href = setLinkId("description");
-            return document.getElementById("description");
+            return { tab: document.getElementById("description"), bubble: document.getElementsByClassName("description")[0] };
         }
     }
 

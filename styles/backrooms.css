@@ -6,7 +6,7 @@ ul {
     margin-left: 16px;
 }
 
-.bubble > .name {
+.bubble  div.name {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,12 +44,22 @@ ul.select > li.visible button {
     font-weight: bold;
 }
 
+p.header {
+    text-transform: uppercase;
+    color: #464646;
+}
+
 .content {
     display: none;
 }
 
 .content.readable {
     display: block !important;
+}
+
+.modv {
+    margin: 3vh 0 3vh;
+    height: 150px;
 }
 
 @media (max-width: 500px) {

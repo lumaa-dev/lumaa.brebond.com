@@ -2,6 +2,8 @@ window.onload = () => {
     updateSelect();
     document.body.style.removeProperty("overflow");
     location.href = setLinkId("up");
+
+    htmlify(document.getElementById("br_versions"))
 }
 
 function updateSelect() {
@@ -13,7 +15,6 @@ function updateSelect() {
     s.tab.classList.add("visible");
     s.bubble.classList.add("readable");
 
-    // wtf u doin' here?
     function selected() {
         if (location.href.endsWith("description")) {
             return { tab: document.getElementById("description"), bubble: document.getElementsByClassName("description")[0] };

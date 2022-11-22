@@ -198,6 +198,28 @@ a.styleless {
     height: 3em;
 }
 
+/* mc mod version */
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #f8bd4a;
+    border-radius: 50%;
+}
+
+.circle.unstable, .spray.unstable {
+    background-color: #ff3232;
+}
+
+.spray {
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    margin: 0;
+    background-color: #f8bd4a;
+    border-radius: 5px;
+}
+
 @media (max-width: 500px) {
     ul.big > li {
         font-size: 5vw;

@@ -26,22 +26,24 @@ ul.select {
 
 ul.select > li {
     padding: 0 1vw 0 1vw;
-    margin: 0 3vw 0 3vw;
-    cursor: pointer;
 }
 
 ul.select > li.visible {
-    border-radius: 3px;
     border-bottom: 0.35vh solid var(--backrooms);
 }
 
 ul.select > li button {
+    padding: 0 2vw 0 2vw;
     font-size: 20px;
     color: white;
 }
 
 ul.select > li.visible button {
     font-weight: bold;
+}
+
+ul.complement > * {
+    font-size: 22px;
 }
 
 p.header {

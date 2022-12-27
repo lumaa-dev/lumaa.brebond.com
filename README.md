@@ -6,4 +6,5 @@
 
 * * *
 
-Site web perso, qui montre mes projets. Sur quoi je travaille le plus.
+Site web perso, qui montre mes projets. Sur quoi je travaille le plus.  
+Dedans y a aussi mon [portfolio](https://lumination.brebond.com/portfolio)

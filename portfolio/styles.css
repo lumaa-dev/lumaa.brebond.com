@@ -1,0 +1,29 @@
+body > .title {
+    background: linear-gradient(var(--branded), #bf9239);
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+body > .title p {
+    transition: all 0.1s ease-in-out;
+    letter-spacing: 1.5vw;
+    text-align: center;
+    font-weight: 100;
+    font-size: 10vw;
+}
+
+body > .title p::selection {
+    background: none !important;
+}
+
+.title .over {
+    font-weight: 900;
+}
+
+.title .nextOver {
+    font-weight: 400;
+}

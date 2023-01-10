@@ -13,7 +13,7 @@
 
     /* particular */
     --modrinth-green: #1bd96a;
-    --async-bg: #2736f2;
+    --async-bg: #222fd5;
     --backrooms: #b6b461;
     --branded: #f8bd4a;
 }
@@ -166,7 +166,16 @@ a.styleless {
 .tiktok {
     background: #000;
     color: #fff !important;
-    border-radius: 6px;
+}
+
+.twitch {
+    background: #9000ff;
+    color: #fff !important;
+}
+
+.twitch:hover {
+    background: #35005e;
+    color: #fff !important;
 }
 
 .unknownify {

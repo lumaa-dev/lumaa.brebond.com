@@ -16,6 +16,7 @@
 .pres > img {
     width: 50vh;
     height: 50vh;
+    border-radius: 50%;
 }
 
 .pres .motto {
@@ -27,6 +28,13 @@
 
 .pres .motto > h1 {
     padding: 5px;
+}
+
+.bubble.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 500px) {

@@ -1,7 +1,6 @@
 window.onload = () => {
     updateSelect();
     document.body.style.removeProperty("overflow");
-    location.href = setLinkId("up");
 
     htmlify(document.getElementById("br_versions"))
 }
@@ -17,25 +16,24 @@ function updateSelect() {
 
     function selected() {
         if (location.href.endsWith("description")) {
-            return { tab: document.getElementById("description"), bubble: document.getElementsByClassName("description")[0] };
+            return { tab: document.getElementById("n-description"), bubble: document.getElementsByClassName("description")[0] };
         } else if (location.href.endsWith("images")) {
-            return { tab: document.getElementById("images"), bubble: document.getElementsByClassName("images")[0] };
+            return { tab: document.getElementById("n-images"), bubble: document.getElementsByClassName("images")[0] };
         } else if (location.href.endsWith("versions")) {
-            return { tab: document.getElementById("versions"), bubble: document.getElementsByClassName("versions")[0] };
+            return { tab: document.getElementById("n-versions"), bubble: document.getElementsByClassName("versions")[0] };
         } else if (location.href.endsWith("links")) {
-            return { tab: document.getElementById("links"), bubble: document.getElementsByClassName("links")[0] };
+            return { tab: document.getElementById("n-links"), bubble: document.getElementsByClassName("links")[0] };
         } else {
             location.href = setLinkId("description");
-            return { tab: document.getElementById("description"), bubble: document.getElementsByClassName("description")[0] };
+            return { tab: document.getElementById("n-description"), bubble: document.getElementsByClassName("description")[0] };
         }
     }
 
     function buttons() {
         const switchBtns = document.querySelectorAll("button.switch");
         switchBtns.forEach((btn) => btn.onclick = () => { 
-            location.href = setLinkId(btn.parentElement.id);
+            location.href = setLinkId(btn.parentElement.id.replace("n-", ""));
             location.reload();
-            location.href = setLinkId("up");
         });
     }
 }

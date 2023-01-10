@@ -15,6 +15,7 @@
     --modrinth-green: #1bd96a;
     --async-bg: #2736f2;
     --backrooms: #b6b461;
+    --branded: #f8bd4a;
 }
 
 body {
@@ -116,7 +117,7 @@ a.styleless {
 }
 
 .branded {
-    background: #f8bd4a;
+    background: var(--branded);
     color: #000;
     border: 3px solid #000;
 }
@@ -203,7 +204,7 @@ a.styleless {
 .circle {
     width: 10px;
     height: 10px;
-    background-color: #f8bd4a;
+    background-color: var(--branded);
     border-radius: 50%;
 }
 
@@ -216,7 +217,7 @@ a.styleless {
     width: 10px;
     height: 150px;
     margin: 0;
-    background-color: #f8bd4a;
+    background-color: var(--branded);
     border-radius: 5px;
 }
 

@@ -44,9 +44,13 @@ window.onload = () => {
         }
     }
 
+    // back button
     if (history.length > 0) {
         setupBack();
-    }   
+    }
+    
+    // footer
+    setFooter()
 }
 
 // back button
@@ -89,4 +93,15 @@ function Enum(...arguments){
         this[arguments[i]] = i;
     }
     return this;
+}
+
+function setFooter(additionalText = "") {
+    const footerPlace = document.createElement("div");
+    footerPlace.classList.add("footer");
+
+    const small = document.createElement("p")
+    small.innerText = `This website made in HTML, CSS, JavaScript by Lumaa. Special shoutout to Rombond, PatateGivrée and Mary.\n${additionalText.trim()}`
+
+    footerPlace.append(small);
+    document.body.append(footerPlace)
 }

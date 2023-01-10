@@ -3,6 +3,8 @@ window.onload = () => {
     document.body.style.removeProperty("overflow");
 
     htmlify(document.getElementById("br_versions"))
+
+    setFooter("Mod Icon by Midjourney, All the images are handmade builds by PatateGivrée")
 }
 
 function updateSelect() {

@@ -185,6 +185,15 @@ a.styleless {
     font-weight: bold;
 }
 
+.footer {
+    padding: 5vh;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.footer > p {
+    color: #505050;
+}
+
 /* back button */
 .back {
     position: fixed;

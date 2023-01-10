@@ -44,7 +44,7 @@ window.onload = () => {
         }
     }
 
-    if (history.length) {
+    if (history.length > 0) {
         setupBack();
     }   
 }
@@ -84,8 +84,8 @@ function setLinkId(id) {
 }
 
 // make enumerators (in case)
-function Enum(){
-    for( var i = 0; i < arguments.length; ++i ){
+function Enum(...arguments){
+    for(var i = 0; i < arguments.length; ++i) {
         this[arguments[i]] = i;
     }
     return this;

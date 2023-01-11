@@ -35,7 +35,7 @@ ul.select > li.visible {
 ul.select > li button {
     padding: 0 2vw 0 2vw;
     font-size: 20px;
-    color: white;
+    color: var(--txt-color);
 }
 
 ul.select > li.visible button {
@@ -75,6 +75,6 @@ p.header {
 
     ul.select > li button {
         font-size: 12px;
-        color: white;
+        color: var(--txt-color);
     }
 }

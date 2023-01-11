@@ -7,8 +7,6 @@
 }
 
 :root {
-    --bg-color: #353535;
-    --txt-color: #fff;
     --font: 'Nunito', sans-serif;
 
     /* particular */
@@ -16,6 +14,16 @@
     --async-bg: #222fd5;
     --backrooms: #b6b461;
     --branded: #f8bd4a;
+}
+
+body.dark {
+    --bg-color: #353535;
+    --txt-color: #fff;
+}
+
+body.light {
+    --bg-color: #fff;
+    --txt-color: #000;
 }
 
 body {
@@ -103,13 +111,13 @@ ul.big > li {
     justify-content: center;
 }
 
-a {
+a, button {
     padding: .25rem 1rem;
     margin: .25rem;
     border-radius: 2rem;
 }
 
-a.styleless {
+a.styleless, button.styleless {
     padding: 0;
     margin: 0;
     border-radius: 0;
@@ -127,6 +135,11 @@ a.styleless {
     color: #000;
 }
 
+.calm {
+    background:rgba(0, 0, 0, 0.25);
+    color: #505050;
+}
+
 .modrinth {
     box-shadow: inset 0 -1px 1px rgb(0 0 0 / 25%);
     background: var(--modrinth-green);
@@ -138,18 +151,30 @@ a.styleless {
 }
 
 .github {
-    background: rgba(64,158,255,0.15);
-    border: 1px solid #71b7ff ;
-    color: #71b7ff !important;
     padding: .25rem 1rem;
     margin: .25rem;
     border-radius: 2rem;
 }
 
-.github:hover {
+body.dark .github {
+    background: #409eff26;
+    border: 1px solid #71b7ff;
+    color: #71b7ff !important;
+}
+
+body.dark .github:hover {
     background: #71b7ff;
-    border: 1px solid #71b7ff ;
     color: #0a0c10 !important;
+}
+
+body.light .github {
+    color: #0969da;
+    background: #ddf4ff;
+}
+
+body.light .github:hover {
+    color: #fff;
+    background: #0969da;
 }
 
 .youtube {
@@ -196,25 +221,16 @@ a.styleless {
 
 /* back button */
 .back {
+    width: 6em;
+    height: 6em;
     position: fixed;
     cursor: pointer;
 }
 
-.back > button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.back p {
-    font-family: var(--font);
-    font-weight: bold;
-    color: #fff;
-}
-
 .back img {
-    width: 3em;
-    height: 3em;
+    width: 6em;
+    height: 6em;
+    rotate: 180deg;
 }
 
 /* mc mod version */

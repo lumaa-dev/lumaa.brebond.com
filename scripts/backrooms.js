@@ -1,5 +1,6 @@
 window.onload = () => {
-    setAppearence()
+    setAppearence();
+    setupHome();
     updateSelect();
     document.body.style.removeProperty("overflow");
 

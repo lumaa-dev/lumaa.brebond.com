@@ -10,5 +10,4 @@
 
 * * *
 
-Site web perso, qui montre mes projets. Sur quoi je travaille le plus.  
-Dedans y a aussi mon portfolio qui arrive
+Site web perso, qui montre mes projets. Sur quoi je travaille le plus type le [BackroomsMod](https://modrinth.com/mod/backrooms) et autres.

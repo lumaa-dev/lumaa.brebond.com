@@ -212,6 +212,12 @@ body.light .github:hover {
     font-weight: bold;
 }
 
+.onMob {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
 .footer {
     padding: 5vh;
     background: rgba(0, 0, 0, 0.35);
@@ -277,5 +283,17 @@ body.light .github:hover {
         display: flex;
         flex-direction: row;
         overflow: auto auto;
+    }
+
+    .removMob {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+    .onMob {
+        display: initial;
+        visibility: initial;
+        opacity: initial;
     }
 }

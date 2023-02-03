@@ -1,3 +1,7 @@
+iframe {
+    border-radius: 5vh;
+}
+
 .pres {
     color: #000;
     background: var(--async-bg);
@@ -14,8 +18,8 @@
 }
 
 .pres > img {
-    width: 50vh;
-    height: 50vh;
+    width: 35vh;
+    height: 35vh;
     border-radius: 50%;
 }
 

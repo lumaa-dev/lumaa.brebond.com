@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Lumaa">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/93350976?v=4">
+    <meta property="og:description" content="Développeur avec la tête vide.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lumaa.brebond.com">
+    <link rel="stylesheet" href="styles/generic.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="assets/pfp.png" type="image/x-icon">
+    <script src="scripts/generic.js"></script>
+    <script>window.onload = () => {
+        setAppearence();
+        setFooter("Vous êtes redirigé vers mon serveur communautaire.")
+
+        document.getElementById("center").style.height = `calc(100vh - ${document.querySelector(".footer").clientHeight}px)`
+        document.location.href = "https://discord.gg/jQ2XcVbpbQ"
+    }</script>
+    <style>
+        #center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: calc(100vh - 200px);
+        }
+
+        #center p {
+            font-size: 5vw;
+        }
+    </style>
+    <title>Source: Lumaa</title>
+</head>
+<body>
+    <div id="center">
+        <p>Redirection vers Source: Lumaa</p>
+    </div>
+</body>
+</html>

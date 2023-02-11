@@ -88,20 +88,12 @@ function setLinkId(id) {
     }
 }
 
-// make enumerators (in case)
-function Enum(...arguments){
-    for(var i = 0; i < arguments.length; ++i) {
-        this[arguments[i]] = i;
-    }
-    return this;
-}
-
 function setFooter(additionalText = "") {
     const footerPlace = document.createElement("div");
     footerPlace.classList.add("footer");
 
     const small = document.createElement("p")
-    small.innerText = `This website made in HTML, CSS, JavaScript by Lumaa. Special shoutout to Rombond, PatateGivrée and Mary.\n${additionalText.trim()}`
+    small.innerText = `This website made in HTML, CSS, JavaScript by Lumaa. Special shoutout to Rombond, PatateGivrée and Mary.\nLast Update: 11/02/2023\n\n${additionalText.trim()}`
 
     const switchAppearence = document.createElement("button")
     switchAppearence.classList.add("calm")
@@ -137,7 +129,8 @@ function getAppearence() {
     if (x == "dark" || x == "light") {
         return x;
     } else {
-        localStorage.setItem("theme", "light");
-        return "light";
+        let y = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
+        localStorage.setItem("theme", y);
+        return y;
     }
 }

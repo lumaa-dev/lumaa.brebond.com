@@ -34,7 +34,7 @@ window.onload = () => {
         const element = shares[i];
         element.onclick = () => { 
             let ShareData = { url: `${setLinkId(element.parentElement.children[1].id)}` }
-            if (navigator.canShare(ShareData) && window.mobileAndTabletCheck()) {
+            if (window.mobileAndTabletCheck()) {
                 navigator.share(ShareData)
             } else {
                 document.body.focus({ preventScroll: false })
@@ -93,7 +93,7 @@ function setFooter(additionalText = "") {
     footerPlace.classList.add("footer");
 
     const small = document.createElement("p")
-    small.innerText = `This website made in HTML, CSS, JavaScript by Lumaa. Special shoutout to Rombond, PatateGivrée and Mary.\nLast Update: 11/02/2023\n\n${additionalText.trim()}`
+    small.innerText = `This website made in HTML, CSS, JavaScript by Lumaa. Special shoutout to Rombond, PatateGivrée and Mary.\nLast Update: 14/02/2023\n\n${additionalText.trim()}`
 
     const switchAppearence = document.createElement("button")
     switchAppearence.classList.add("calm")
